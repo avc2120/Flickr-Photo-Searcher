@@ -112,7 +112,7 @@ function getPhotos()
     var temp;
     var url = "Profile";
     temp = "\"https://farm"+farmID+".staticflickr.com/"+serverID+"/"+ID+"_"+secret+".jpg\"";
-    link += tr + "<td><figure><a href= " + temp + "><img src=" + temp + "><figcaption><a href=https://www.flickr.com/photos/" + owner + "><h2><center>" + name + owner + "</center></h2></figcaption></figure></td>";
+    link += tr + "<td><figure><center><a href= " + temp + "><img src=" + temp + "><figcaption><a href=https://www.flickr.com/photos/" + owner + "></center><h2><center>" + name + owner + "</center></h2></figcaption></figure></td>";
     i = i+1;
   }
   link += "</table>"
@@ -132,6 +132,7 @@ function getPhotos()
   {
     link += next_button;
   }
+  link += "<hr><h2 align=\"left\">&nbsp;&copy;&nbsp;Alice Chang</h2>";
   document.getElementById('results').innerHTML = link;
   max = max + 10;
 }

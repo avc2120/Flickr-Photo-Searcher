@@ -53,12 +53,12 @@ h1 {
   font-size: 70px;
   color:#87CEFA;
 }
-h2 {
+h2, input{
   font-family: 'Shadows Into Light Two', serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 30px;
+  line-height: 37px;
 }
 table {
   width = 100%;
@@ -66,8 +66,9 @@ table {
   
 }
 img {
-  width = 1000px;
-  height = 850px;
+  max-width = 1000px;
+  max-height = 1000px;
+  overflow:hidden;
 }
 img:hover{
   opacity: 0.4; 
